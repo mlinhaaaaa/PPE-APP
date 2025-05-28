@@ -18,7 +18,7 @@ SELECTED_CLASSES = {
     9: "Helmet", 10: "Medical-suit", 11: "Person", 12: "Safety-vest",
     13: "Safety-suit", 14: "Tools"
 }
-REQUIRED_PPE = {"Helmet", "Safety-vest", "Face mask", "Safety-suit", "Gloves"}
+REQUIRED_PPE = {"Earmuffs","Face","Face mask","Face-guard","Foot","Glasses","Gloves","Hands","Head","Helmet","Medical-suit","Person","Safety-vest","Safety-suit"}
 
 OUTPUT_DIR = "outputs"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -30,7 +30,15 @@ def get_color_for_class(class_name):
         "Face mask": (0, 0, 255),       # đỏ
         "Safety-suit": (165, 42, 42),   # nâu
         "Gloves": (128, 0, 128),        # tím
-        # Có thể thêm class khác nếu muốn
+        "Earmuffs": (0, 255, 255),      # xanh lơ
+        "Face": (255, 192, 203),        # hồng
+        "Face-guard": (255, 255, 0),    # vàng
+        "Foot": (139, 69, 19),          # nâu đậm
+        "Glasses": (0, 128, 128),       # xanh đậm
+        "Hands": (255, 105, 180),       # hồng đậm
+        "Head": (128, 128, 0),          # xanh ô liu
+        "Medical-suit": (0, 0, 128),    # xanh đậm navy
+        "Person": (105, 105, 105),      # xám đậm
     }
     return color_map.get(class_name, (192, 192, 192))  # xám mặc định
 

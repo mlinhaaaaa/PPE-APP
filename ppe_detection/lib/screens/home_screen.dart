@@ -125,11 +125,20 @@ class HomeScreen extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              '• Helmet',
-                              '• Safety-vest',
+                              '• Earmuffs',
+                              '• Face',
                               '• Face mask',
-                              '• Safety-suit',
+                              '• Face-guard',
+                              '• Foot',
+                              '• Glasses',
                               '• Gloves',
+                              '• Hands',
+                              '• Head',
+                              '• Helmet',
+                              '• Medical-suit',
+                              '• Person',
+                              '• Safety-vest',
+                              '• Safety-suit',
                             ].map((item) => Padding(
                               padding: const EdgeInsets.only(bottom: 4),
                               child: Text(

@@ -15,6 +15,24 @@ Color getColorForClass(String className) {
       return Colors.brown;
     case 'gloves':
       return Colors.purple;
+    case 'earmuffs':
+      return Colors.cyan;
+    case 'face':
+      return Colors.pink.shade200;
+    case 'face-guard':
+      return Colors.yellow;
+    case 'foot':
+      return Colors.brown.shade700;
+    case 'glasses':
+      return Colors.teal;
+    case 'hands':
+      return Colors.pink.shade400;
+    case 'head':
+      return Colors.green.shade700;
+    case 'medical-suit':
+      return Colors.blue.shade900;
+    case 'person':
+      return Colors.grey.shade700;
     default:
       return Colors.grey;
   }
